@@ -83,7 +83,6 @@ INSTALLED_APPS = [
     'django_registration',
     'bootstrap5',
     'cloudinary',
-    'crispy_forms',
     'mathfilters',
 ]
 
