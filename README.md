@@ -1,6 +1,7 @@
 # AWWARDS
 
 ## Created By Ephraim Murimi
+
 ## Description
 This is a web application developed to showcase user projects done by Users. They get to click on a project and view more details about it and also leave ratings on selected projects.
 
