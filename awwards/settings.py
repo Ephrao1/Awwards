@@ -79,7 +79,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'ratings.apps.RatingsConfig',
+    'ratings',
     'django_registration',
     'bootstrap5',
     'cloudinary',
