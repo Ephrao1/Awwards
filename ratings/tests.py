@@ -6,9 +6,9 @@ from .models import Profile,Project,Rating
 # Create your tests here.
 class ProfileTestClass(TestCase):
     def setUp(self):
-        self.felista = User(username = 'Felista', email = "felkiriinya@gmail.com", password ='Tomorrowfel1#')
-        self.profile = Profile(user = self.felista,profile_photo = 'image.jpg', bio = 'I am a software developer')
-        self.felista.save()
+        self.Ephrao1 = User(username = 'Ephrao1', email = "ebundi04@gmail.com", password ='Eph2753$')
+        self.profile = Profile(user = self.Ephrao1,profile_photo = 'image.jpg', bio = 'This is my account')
+        self.Ephrao1.save()
         # self.profile.save_profile()
 
     def tearDown(self):
@@ -21,8 +21,8 @@ class ProfileTestClass(TestCase):
 
 class ProjectTestClass(TestCase):
     def setUp(self):
-        self.felista = User(username = 'Felista', email = "felkiriinya@gmail.com", password ='Tomorrowfel1#')
-        self.profile = Profile(user = self.felista,profile_photo = 'image.jpg', bio = 'I am a software developer')
+        self.felista = User(username = 'Ephrao1', email = "ebundi04@gmail.com", password ='Eph2753$')
+        self.profile = Profile(user = self.Ephrao1,profile_photo = 'image.jpg', bio = 'This is my account')
         self.project = Project(sitename = "blogger", image ='blog.jpg',desc ='Cool',link = 'blogger.com', categories = 'website', user = self.felista)
         self.felista.save()
         self.project.save_project()
@@ -57,10 +57,10 @@ class ProjectTestClass(TestCase):
     
 class RatingTestClass(TestCase):
     def setUp(self):
-        self.felista = User(username = 'Felista', email = "felkiriinya@gmail.com", password ='Tomorrowfel1#')
-        self.profile = Profile(user = self.felista,profile_photo = 'image.jpg', bio = 'I am a software developer')
-        self.project = Project(sitename = "blogger", image ='blog.jpg',desc ='Cool',link = 'blogger.com', categories = 'website', user = self.felista)
-        self.rating = Rating(user = self.felista, post= self.project, usability_rating= 1,design_rating=3, content_rating=8, review="great")
+        self.felista = User(username = 'Ephrao1', email = "ebundi04@gmail.com", password ='Eph2753$')
+        self.profile = Profile(user = self.Ephrao1,profile_photo = 'image.jpg', bio = 'This is my account')
+        self.project = Project(sitename = "blogger", image ='blog.jpg',desc ='Cool',link = 'blogger.com', categories = 'website', user = self.EphraO1)
+        self.rating = Rating(user = self.Ephrao1, post= self.project, usability_rating= 1,design_rating=3, content_rating=8, review="great")
         self.felista.save()
         self.project.save_project()    
         self.rating.save_rating()
